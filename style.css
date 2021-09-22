@@ -1,0 +1,33 @@
+.parent{
+    height: 400px;
+    width: 400px;
+    background-color: cadetblue;
+}
+
+.child{
+    height: 50%;
+    width: 50%;
+    background-color: coral;
+    animation: make-a-270 1s ease-in forwards infinite alternate ;
+}
+
+@keyframes make-a-270{
+    0%{
+      transform: translateX(0);  
+    }
+
+    33%{
+      transform: translateY(100%);
+      background-color: blueviolet;  
+    }
+
+      66%{
+      transform: translateY(100%) translateX(100%);
+      background-color: bisque;  
+    }
+
+      100%{
+      transform: translateX(100%);  
+      background-color: teal;
+    }
+}
